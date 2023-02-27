@@ -10,11 +10,9 @@ urlpatterns = [
          name="farms-list-create"),
     path('farms/<int:pk>', FarmRetrieveUpdateDestroyView.as_view(),
          name="farms-retrieve-update-destroy"),
-
     path('owners', OwnerListCreateView.as_view(),
          name="owners-list-create"),
     path('owners/<int:pk>',
          OwnerRetrieveUpdateDestroyView.as_view(),
          name="owners-retrieve-update-destroy"),
-
 ]

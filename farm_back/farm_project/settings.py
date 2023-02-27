@@ -84,6 +84,13 @@ DATABASES = {
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
+    },
+    'test': {
+        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
+        'NAME': BASE_DIR +"/" + 'test_db',
+        'USER': '',
+        'PASSWORD': '',
+        "HOST": '',
     }
 }
 
