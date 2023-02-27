@@ -173,7 +173,6 @@ def test_post_farms_with_invalid_name_datatype_should_return_400(api_client):
 @pytest.mark.django_db
 def test_post_farms_without_name_should_return_400(api_client):
     farm_data = copy.copy(FARM_DATA)
-    print(json.dumps(farm_data))
     del farm_data["name"]
     response = api_client.post('/api/v1/farms', data=farm_data)
     assert response.status_code == 400
