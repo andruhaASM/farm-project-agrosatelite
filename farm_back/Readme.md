@@ -92,7 +92,7 @@ Look the django-admin accessing *http://localhost:8000/admin* and use your super
 
 --- 
 
-# Complete the Farm Project
+# Make the following changes
 
 1. Add the following fields to the FARM model:
     * Municipality
